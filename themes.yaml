@@ -1,0 +1,67 @@
+apple_home_dark:
+  # ---------- Core ----------
+  primary-color: "#0A84FF"
+  accent-color: "#0A84FF"
+
+  # ---------- Background ----------
+  lovelace-background: "center / cover no-repeat fixed url('/local/orange-sky.avif')"
+  primary-background-color: "#1C1C1E"
+  secondary-background-color: "#2C2C2E"
+  divider-color: "rgba(84, 84, 88, 0.35)"
+  
+# Mushroom common tuning
+  mushroom-card-border-radius: "24px"
+  mushroom-shadow: "0 12px 30px rgba(0, 0, 0, 0.45)"
+  mushroom-card-background: "rgba(44, 44, 46, 0.70)"
+
+  # Chips (Apple-like pills)
+  mushroom-chip-background: "rgba(58, 58, 60, 0.70)"
+  mushroom-chip-border-color: "rgba(255, 255, 255, 0.10)"
+
+  # ---------- Typography ----------
+  primary-text-color: "#FFFFFF"
+  secondary-text-color: "rgba(235, 235, 245, 0.60)"
+  disabled-text-color: "rgba(235, 235, 245, 0.30)"
+
+  # ---------- Cards ----------
+  ha-card-border-radius: "24px"
+  ha-card-border-width: "1px"
+  ha-card-border-color: "rgba(255, 255, 255, 0.10)"
+  ha-card-box-shadow: "0 12px 30px rgba(0, 0, 0, 0.45)"
+
+  ha-card-background: "rgba(44, 44, 46, 0.70)"
+  card-background-color: "rgba(44, 44, 46, 0.70)"
+  paper-card-background-color: "rgba(44, 44, 46, 0.70)"
+
+  # ---------- Header ----------
+  app-header-background-color: "rgba(28, 28, 30, 0.80)"
+  app-header-text-color: "#FFFFFF"
+  app-header-selection-bar-color: "#0A84FF"
+
+  # ---------- Icons ----------
+  state-icon-color: "rgba(235, 235, 245, 0.70)"
+  state-icon-active-color: "#0A84FF"
+  paper-item-icon-color: "rgba(235, 235, 245, 0.70)"
+
+  # ---------- Sliders ----------
+  paper-slider-knob-color: "#0A84FF"
+  paper-slider-active-color: "#0A84FF"
+  paper-slider-container-color: "rgba(235, 235, 245, 0.22)"
+
+  # ---------- iOS system semantic colors (handy for states) ----------
+  success-color: "#34C759"
+  warning-color: "#FF9F0A"
+  error-color: "#FF453A"
+  info-color: "#0A84FF"
+
+  # ---------- Card-mod (blur glass) ----------
+  # ---------- Card-mod (blur glass) ----------
+  card-mod-theme: apple_home_dark
+  card-mod-root: |
+    ha-app-layout {
+      background: var(--lovelace-background);
+    }
+    ha-card {
+      -webkit-backdrop-filter: blur(18px);
+      backdrop-filter: blur(18px);
+    }
