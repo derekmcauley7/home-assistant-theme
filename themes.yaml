@@ -41,7 +41,46 @@ apple_home_dark:
   # ---------- Icons ----------
   state-icon-color: "rgba(235, 235, 245, 0.70)"
   state-icon-active-color: "#0A84FF"
-  paper-item-icon-color: "rgba(235, 235, 245, 0.70)"
+  
+  # ---------- Fix icon picker + editor icon contrast (no card-mod changes) ----------
+  text-light-primary-color: "#FFFFFF"
+  paper-item-icon-active-color: "#0A84FF"
+
+  # These are the big ones for the icon picker list
+  paper-item-icon-color: "rgba(235, 235, 245, 0.92)"
+  paper-item-icon_-_color: "rgba(235, 235, 245, 0.92)"   # yes, HA still reads this in places
+
+  # HA dialog/list icon tokens (MDC)
+  mdc-theme-on-background: "#FFFFFF"
+  mdc-theme-on-surface: "#FFFFFF"
+  mdc-theme-text-icon-on-background: "rgba(235, 235, 245, 0.92)"
+  mdc-theme-text-icon-on-surface: "rgba(235, 235, 245, 0.92)"
+  mdc-theme-text-primary-on-surface: "#FFFFFF"
+  mdc-theme-text-secondary-on-surface: "rgba(235, 235, 245, 0.60)"
+  
+  # ---------- Fix editor text fields / selects (config dialogs) ----------
+  mdc-text-field-fill-color: "#2C2C2E"
+  mdc-text-field-ink-color: "#FFFFFF"
+  mdc-text-field-label-ink-color: "rgba(235, 235, 245, 0.60)"
+  mdc-text-field-idle-line-color: "rgba(255, 255, 255, 0.20)"
+  mdc-text-field-hover-line-color: "rgba(255, 255, 255, 0.35)"
+
+  mdc-text-field-outlined-idle-border-color: "rgba(255, 255, 255, 0.20)"
+  mdc-text-field-outlined-hover-border-color: "rgba(255, 255, 255, 0.35)"
+  mdc-text-field-outlined-focused-border-color: "#0A84FF"
+
+  mdc-select-fill-color: "#2C2C2E"
+  mdc-select-ink-color: "#FFFFFF"
+  mdc-select-label-ink-color: "rgba(235, 235, 245, 0.60)"
+  mdc-select-idle-line-color: "rgba(255, 255, 255, 0.20)"
+  mdc-select-hover-line-color: "rgba(255, 255, 255, 0.35)"
+  mdc-select-dropdown-icon-color: "rgba(235, 235, 245, 0.85)"
+
+  # Some components still use these older “paper” vars for dialogs/menus
+  paper-dialog-color: "#2C2C2E"
+  paper-listbox-background-color: "#2C2C2E"
+  paper-listbox-color: "#FFFFFF"
+  paper-item-body-secondary-color: "rgba(235, 235, 245, 0.60)"
 
   # ---------- Sliders ----------
   paper-slider-knob-color: "#0A84FF"
